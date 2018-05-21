@@ -1,0 +1,45 @@
+.table__row {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    padding: $m-size;
+    width: 100%;
+}
+
+.table__cell {
+    overflow: hidden;
+}
+
+.table__header {
+    color: $secondary-text-color;
+    font-family: 'Roboto-Regular', Helvetica, Arial, sans-serif;
+    font-size: $font-small;
+    padding: $s-size $m-size;
+    text-transform: uppercase;  
+}
+
+.fade-enter {
+    border-left: 3px solid $accent-color;
+    opacity: 0.01;
+}
+  
+.fade-enter.fade-enter-active {
+    border-left: 3px solid $accent-color;
+    opacity: 1;
+    transition: opacity 500ms ease-in;
+}
+
+.fade-leave {
+    opacity: 1;
+}
+
+.fade-leave.fade-leave-active {
+    opacity: 0.01;
+    transition: opacity 300ms ease-in;
+}
+
+@media (min-width: $break-point) {
+    .table__row {
+        flex-direction: row;
+    }
+}

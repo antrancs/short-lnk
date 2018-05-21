@@ -2,8 +2,6 @@ import * as types from './actionTypes';
 import shortenLinkApi from './../api/shortenLinkApi';
 import databaseApi from './../api/databaseApi';
 
-import moment from 'moment';
-
 export const addLink = (link) => ({
    type: types.ADD_LINK,
    link

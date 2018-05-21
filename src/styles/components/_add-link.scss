@@ -1,0 +1,22 @@
+.add-link-wrapper {
+    padding: 0 $m-size;
+}
+
+.add-link {
+    display: flex;
+    margin-bottom: $xl-size;
+}
+
+.add-link__input {
+    background: $light-gray;
+    border: none;
+    border-radius: $border-radius;
+    color: $primary-text-color;
+    flex-grow: 1;
+    margin-right: $s-size;
+    padding: $xs-size $s-size;
+}
+
+.add-link-error {
+    font-weight: bold;
+}

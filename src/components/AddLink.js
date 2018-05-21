@@ -2,7 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import validator from 'validator';
 
-import { shortenLink } from '.././actions/links';
+import { shortenLink } from './../actions/links';
 
 class AddLink extends React.Component {
     state = {

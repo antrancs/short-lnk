@@ -1,0 +1,40 @@
+.links-list-control {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: $m-size;
+    padding: 0 $m-size;
+}
+
+.links-list-control__header {
+    display: flex;
+    margin-bottom: $s-size;
+
+    &__title {
+        font-size: $font-large;
+        font-weight: 500;
+        margin: 0 $m-size 0 0;
+    }
+}
+
+.select {
+    color: $primary-text-color;
+    height: 5rem;
+    padding: $s-size;
+    width: 50%;
+}
+
+@media (min-width: $break-point) {
+    .links-list-control {
+        flex-direction: row;
+    }
+
+    .links-list-control__header {
+        align-self: center;
+        margin-bottom: 0;
+    }
+
+    .select {
+        width: auto;
+    }
+}
