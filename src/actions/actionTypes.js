@@ -1,0 +1,10 @@
+export const ADD_LINK = 'ADD_LINK';
+export const SET_LINKS = 'SET_LINKS';
+export const SET_LINK_NOT_NEW = 'SET_LINK_NOT_NEW';
+export const REMOVE_LINKS = 'REMOVE_LINKS';
+
+export const SORT_BY_CREATION_DATE = 'SORT_BY_CREATION_DATE';
+export const SORT_BY_LAST_VISIT_DATE = 'SORT_BY_LAST_VISIT_DATE';
+export const SORT_BY_VISITS = 'SORT_BY_VISITS';
+
+export const SET_LOADING_STATE = 'SET_LOADING_STATE';
