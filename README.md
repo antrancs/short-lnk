@@ -21,5 +21,7 @@ yarn start
  6. AWS & Heroku for deployment
  
  ## Todos:
- 
-Implemented private links for users
+
+Log-in features
+
+Implement private links for users
