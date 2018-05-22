@@ -23,6 +23,8 @@ class Link extends React.Component {
         let rowClassName = "table__row";
         rowClassName += isNew ? " link--new" : "";
 
+        const href = originalUrl.startsWith('http') ? originalUrl : `//${originalUrl}`;
+
         return (
             <div className={rowClassName}>
                 <div className="table__cell link-group">
@@ -41,7 +43,7 @@ class Link extends React.Component {
                     </div>
 
                     <div className="link-group__original">
-                        <a href={originalUrl}>{originalUrl}</a>
+                        <a href={href}>{originalUrl}</a>
                     </div>
                 </div>
                 <div className="table__cell link-visits">{visitCount}</div>
