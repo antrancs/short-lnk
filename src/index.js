@@ -1,14 +1,14 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import { Provider } from "react-redux";
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { Provider } from 'react-redux';
+import 'normalize.css/normalize.css';
 
-import App from "./components/App";
-import configureStore from "./store/configureStore";
-import { loadLinks } from "./actions/links";
-import { setLoadingStatus } from "./actions/loadingStatus";
-import registerServiceWorker from "./registerServiceWorker";
-import "normalize.css/normalize.css";
-import "./styles/styles.css";
+import App from './components/App';
+import configureStore from './store/configureStore';
+import { loadLinks } from './actions/links';
+import setLoadingStatus from './actions/loadingStatus';
+import registerServiceWorker from './registerServiceWorker';
+import './styles/styles.css';
 
 const store = configureStore();
 
@@ -23,6 +23,6 @@ store.dispatch(loadLinks()).then(() => {
   store.dispatch(setLoadingStatus(false));
 });
 
-ReactDOM.render(jsx, document.getElementById("root"));
+ReactDOM.render(jsx, document.getElementById('root'));
 
 registerServiceWorker();
