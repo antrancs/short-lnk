@@ -1,16 +1,16 @@
 .button {
-    background: $accent-color;
-    border-radius: $border-radius;
-    border: none; 
-    color: white;
-    padding: $s-size $s-size;
+  background: $accent-color;
+  border-radius: $border-radius;
+  border: none;
+  color: white;
+  padding: $s-size $s-size;
 }
 
 .button--link {
-    align-self: flex-end;
-    background: none;
-    border: none;
-    color: $accent-color;
-    margin: 0;
-    padding: 0;
+  align-self: flex-end;
+  background: none;
+  border: none;
+  color: $accent-color;
+  margin: 0;
+  padding: 0;
 }

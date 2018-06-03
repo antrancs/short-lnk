@@ -6,13 +6,13 @@ import loadingStatusReducer from './../reducers/loadingStatus';
 import sortCriteriaReducer from './../reducers/sortCriteria';
 
 export default () => {
-    const store = createStore(
-        combineReducers({
-            links: linksReducer,
-            loadingStatus: loadingStatusReducer,
-            sortCriteria: sortCriteriaReducer
-        }),
-        applyMiddleware(thunk)
-    );
-    return store;
+  const store = createStore(
+    combineReducers({
+      links: linksReducer,
+      loadingStatus: loadingStatusReducer,
+      sortCriteria: sortCriteriaReducer
+    }),
+    applyMiddleware(thunk)
+  );
+  return store;
 };

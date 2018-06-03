@@ -1,49 +1,49 @@
 .link-group {
-    margin-bottom: $s-size;
+  margin-bottom: $s-size;
 }
 
 .link-group__original {
-    color: $secondary-text-color;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
+  color: $secondary-text-color;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .link-group__short {
-    color: $primary-text-color;
-    font-weight: bold;
-    margin-bottom: $s-size;
-    
-    &--shortcode {
-        color: $accent-color;
-    }
+  color: $primary-text-color;
+  font-weight: bold;
+  margin-bottom: $s-size;
 
-    &:hover {
-        cursor: pointer;
-    }
+  &--shortcode {
+    color: $accent-color;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .link-visits {
-    display: flex;
-    margin-bottom: $s-size;
+  display: flex;
+  margin-bottom: $s-size;
 }
 
 @media (min-width: $break-point) {
-    .link-group {
-        align-self: center;
-        margin-bottom: 0;
-        margin-right: $xl-size;
-        width: 60%;
-    }
+  .link-group {
+    align-self: center;
+    margin-bottom: 0;
+    margin-right: $xl-size;
+    width: 60%;
+  }
 
-    .link-visits {
-        align-self: center;
-        flex-grow: 1;
-        margin-bottom: 0;
-    }
+  .link-visits {
+    align-self: center;
+    flex-grow: 1;
+    margin-bottom: 0;
+  }
 
-    .link-last-visit {
-        align-self: center;
-        width: 20%;
-    }
+  .link-last-visit {
+    align-self: center;
+    width: 20%;
+  }
 }
